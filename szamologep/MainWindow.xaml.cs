@@ -49,9 +49,9 @@ namespace szamologep
 
 		private void Button_Click_3(object sender, RoutedEventArgs e)
 		{
-			int sz1 = Convert.ToInt32(szam1.Text);
-			int sz2 = Convert.ToInt32(szam2.Text);
-			eredmenyLabel.Content = sz1 / sz2;
+			double sz1 = Convert.ToInt32(szam1.Text);
+			double sz2 = Convert.ToInt32(szam2.Text);
+			eredmenyLabel.Content = Math.Round(sz1 / sz2, 2);
 		}
 
 		private void Button_Click_4(object sender, RoutedEventArgs e)
